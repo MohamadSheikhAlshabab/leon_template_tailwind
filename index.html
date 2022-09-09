@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <title>Sheikh Alshabab</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5c95439a77.js" crossorigin="anonymous"></script>
+    <script>
+        if (
+            localStorage.getItem('color-theme') === 'dark' ||
+            (!('color-theme' in localStorage) &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="nav"  class="change bg-white dark:bg-slate-800 h-16 flex flex-row justify-between items-center p-6">
+            <a href="#">
+                <div id="logo" class="flex flex-row justify-center items-center">
+
+                    <img id="my-logo" class="w-20 h-20 sm:w-20 sm:h-20 sm:pl-4 p-2 " src="./images/mylogo.png"
+                        alt="My logo.">
+                    <h2
+                        class="no-underline text-indigo-500  dark:text-gray-300  sm:text-2xl font-extrabold text-base h-5 -ml-2  p-0 sm:pb-10">
+                        Sheikh Alshabab</h2>
+                </div>
+            </a>
+            <div class="flex flex-row justify-between items-center">
+                <section class="hamburger-menu  text-sm lg:text-xl   sm:pb-2">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn flex lg:hidden" for="menu__toggle">
+                          <span class="menu__span"></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#Services">Services</a></li>
+                            <li><a class="menu__item" href="#Portfolio">Portfolio</a></li>
+                            <li><a class="menu__item" href="#About">About</a></li>
+                            <li><a class="menu__item" href="#Contact">Contact</a></li>
+                        </ul>
+                    <ul id="menu_flex" class="hidden lg:flex flex-row sm:pb-6">
+                        <li class="pr-4 text-slate-400 dark:text-gray-300 hover:text-slate-500 dark:hover:text-slate-100">
+                            <a href="#Services">
+                                Services
+                            </a>
+                        </li>
+                        <li class="pr-4 text-slate-400 dark:text-gray-300 hover:text-slate-500">
+                            <a  href="#Portfolio">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="pr-4 text-slate-400 dark:text-gray-300 hover:text-slate-500">
+                            <a  href="#About">
+                                About
+                            </a>
+                        </li>
+                        <li class="pr-4 text-slate-400 dark:text-gray-300 hover:text-slate-500">
+                            <a href="#Contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div>
+                    <button id="theme-toggle" type="button"
+                        class="rounded-lg text-sm p-0.5">
+                        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section
+            class="change1 bg-gray-100 h-fit   py-20 px-2 lg:px-2 flex flex-col lg:flex-row justify-around items-center  lg:divide-x  lg:divide-y-0  divide-y divide-gray-500 ">
+            <section class="lg:w-[33vw] px-2  flex flex-col items-center p-5">
+                <i class='fa fa-magic fa-3x text-indigo-500 mb-5'></i>
+                <h3 class="lg:text-2xl font-bold mb-6 text-center">Tell Us Your Idea</h3>
+                <p class="change2 text-slate-500 text-center mx-2 px-2 lg:mx-8 lg:px-6">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,
+                    sed
+                    do eiusmod tempor
+                    incididunt ut lab</p>
+            </section>
+            <section class="lg:w-[33vw] px-2 flex flex-col items-center p-5">
+                <i class='fa fa-diamond fa-3x text-indigo-500 mb-5'></i>
+                <h3 class="lg:text-2xl font-bold mb-6 text-center">We Will Do All The Work</h3>
+                <p class="change2 text-slate-500 text-center mx-2 px-2 lg:mx-8 lg:px-6">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,
+                    sed
+                    do eiusmod tempor
+                    incididunt ut lab</p>
+            </section>
+            <section class="lg:w-[33vw] px-2 flex flex-col items-center p-5">
+                <i class='fa fa-globe fa-3x text-indigo-500 mb-5'></i>
+                <h3 class="lg:text-2xl font-bold mb-6 text-center">Your Product is Worldwide</h3>
+                <p class="change2 text-slate-500 text-center mx-2 px-2 lg:mx-8 lg:px-6">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,
+                    sed
+                    do eiusmod tempor
+                    incididunt ut lab</p>
+            </section>
+        </section>
+        <section id="Services" class="change flex flex-col justify-center items-center pb-32">
+            <h2 class="text-6xl sm:text-8xl font-extrabold text-[#ebeced] mt-16">Services</h2>
+            <p class="change2 sm:text-xl -mt-4 sm:-mt-6 text-[#797979] "> Don't be busy, be productive</p>
+            <div class="lg:grid lg:grid-col-1 lg:grid-flow-col lg:gap-0 pt-1 lg:pt-40 relative">
+                <div
+                    class=" md:grid md:grid-rows-2 md:grid-flow-col md:gap-0 sm:pl-20  flex flex-col justify-center items-center">
+                    <section
+                        class="sm:text-3xl sm:text-left sm:grid sm:grid-flow-col items-center justify-center flex flex-col sm:items-start sm:justify-start px-4 text-center pt-10 text-4xl">
+                        <i class='fas fa-palette fa-x text-[#10cab7] mr-4'></i>
+                        <div class="grid grid-row-2 grid-flow-row gap-0">
+                            <h3 class="text-[18.72px] font-bold">Graphic Design</h3>
+                            <p class="change text-[#444] text-[16px] font-light leading-[1.6]">Graphic design is the
+                                process of
+                                visual communication and problem-solving using one or
+                                more
+                                of typography, photography and illustration.
+                            </p>
+                        </div>
+                    </section>
+                    <section
+                        class="sm:text-3xl sm:text-left sm:grid sm:grid-flow-col items-center justify-center flex flex-col sm:items-start sm:justify-start px-4 text-center pt-10 text-4xl">
+                        <i class='fab fa-sketch fa-x text-[#10cab7] mr-4'></i>
+                        <div class="grid grid-row-2 grid-flow-row gap-0">
+                            <h3 class="text-[18.72px] font-bold">UI & UX</h3>
+                            <p class="change text-[#444] text-[16px] font-light leading-[1.6]">Process of enhancing user
+                                satisfaction with a product by improving the usability,
+                                accessibility, and pleasure provided in the interaction. </p>
+                        </div>
+                    </section>
+                    <section
+                        class="sm:text-3xl sm:text-left sm:grid sm:grid-flow-col items-center justify-center flex flex-col sm:items-start sm:justify-start px-4 text-center pt-10 text-4xl">
+                        <i class="fas fa-vector-square fa-x text-[#10cab7] mr-4"></i>
+                        <div class="grid grid-row-2 grid-flow-row gap-0">
+                            <h3 class="text-[18.72px] font-bold">Web Design</h3>
+                            <p class="change text-[#444] text-[16px] font-light leading-[1.6]">Web design encompasses
+                                many
+                                different skills and disciplines in the production and
+                                maintenance of websites. </p>
+                        </div>
+                    </section>
+                    <section
+                        class="sm:text-3xl sm:text-left sm:grid sm:grid-flow-col items-center justify-center flex flex-col sm:items-start sm:justify-start px-4 text-center pt-10 text-4xl">
+                        <i class="fas fa-pencil-ruler fa-x text-[#10cab7] mr-4"></i>
+                        <div class="sm:{grid; grid-row-2; grid-flow-row; gap-0}">
+                            <h3 class="text-[18.72px] font-bold">Web Development</h3>
+                            <p class="change text-[#444] text-[16px] font-light leading-[1.6]">Web development is a
+                                broad term
+                                for
+                                the work involved in developing a web site for the
+                                Internet or an intranet.</p>
+                        </div>
+                    </section>
+                </div>
+                <div
+                    class="change3 lg:before:content-[''] lg:bg-slate-600 lg:absolute  lg:h-[calc(500px)]  lg:w-[100px] lg:top-[100px] lg:right-5 lg:-z-10 ">
+                </div>
+                <img class="change5 lg:w-[300px] lg:h-[400px] lg:z-1 lg:pr-14 lg:max-w-sm w-0 lg:-z-10" src="./images/services.jpg"
+                    alt="">
+            </div>
+        </section>
+        <section id="Portfolio" class="change1 flex flex-col justify-center items-center bg-[#f6f6f6]">
+            <h2 class="text-6xl sm:text-8xl font-extrabold text-[#ebeced] mt-16">Portfolio</h2>
+            <p class="change2 sm:text-xl -mt-4 sm:-mt-6 text-[#797979]"> If you do it right, it will last forever.</p>
+
+            <div class="md:grid grid-col-3 grid-flow-col gap-8 p-2 sm:p-20 sm:block  sm:py-20">
+                <div class="change bg-white my-10">
+                    <img src="./images/portfolio-1.jpg" alt="portfolio-1.">
+                    <h3 class="pt-5 px-4 font-bold text-xl">Project Here</h3>
+                    <p class="change2 p-4 text-[#777] text-[16px] font-normal leading-[1.6]">My creative ability is very
+                        difficult to measure because it can manifest in so many surprising and.</p>
+                </div>
+                <div class="change bg-white my-10">
+                    <img src="./images/portfolio-2.jpg" alt="portfolio-2.">
+                    <h3 class="pt-5 px-4 font-bold text-xl">Project Here</h3>
+                    <p class="change2 p-4 text-[#777] text-[16px] font-normal leading-[1.6]">My creative ability is very
+                        difficult to measure because it can manifest in so many surprising and.</p>
+                </div>
+                <div class="change bg-white my-10">
+                    <img src="./images/portfolio-3.jpg" alt="portfolio-3.">
+                    <h3 class="pt-5 px-4 font-bold text-xl">Project Here</h3>
+                    <p class="change2 p-4 text-[#777] text-[16px] font-normal leading-[1.6]">My creative ability is very
+                        difficult to measure because it can manifest in so many surprising and.</p>
+                </div>
+            </div>
+        </section>
+        <section id="About" class="change flex flex-col justify-center items-center bg-white pb-11">
+            <h2 class="text-7xl sm:text-8xl font-extrabold text-[#ebeced] mt-16">About</h2>
+            <p class="change2 sm:text-xl -mt-5 sm:-mt-6 text-[#797979] mb-20">Less is more work</p>
+            <div
+                class="lg:relative lg:grid lg:grid-col-2 lg:grid-flow-col lg:gap-10 lg:pr-10 flex flex-col items-center justify-center">
+                <div
+                    class="lg:before:content-[''] lg:absolute  lg:h-[400px] lg:bg-[#ebeced] lg:w-[100px] lg:-top-[40px] lg:left-10 ">
+                </div>
+                <div
+                    class="lg:before:content-[''] lg:absolute  lg:h-[350px]  lg:bg-[#10cab7] lg:w-[80px] lg:-top-[40px] lg:ml-60 ">
+                </div>
+                <img class="w-[250px] h-[500px] lg:max-w-sm  lg:absolute lg:w-[300px] lg:h-[346.667px]  z-10 lg:pl-20  lg:flex lg:items-center"
+                    src="./images/services.jpg" alt="">
+                <div
+                    class="lg:before:content-[''] lg:absolute  lg:h-[80px] lg:top-[250px] -z-1  sm:bg-[#10cab7] lg:w-[200px]  lg:ml-56 lg:mr-10 ">
+                </div>
+                <div class="lg:pl-96 pt-10 pb-24">
+                    <p class=" font-bold mb-12 mx-24 lg:mx-20">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Nihil nemo neque voluptate tempora velit cum non, fuga vitae architecto delectus sed maxime
+                        rerum impedit aliquam obcaecati, aut excepturi iusto laudantium! </p>
+                    <hr class=" mr-36 ml-24 lg:w-[50%] lg:ml-20 h-[3px] mb-10 bg-[#10cab7]" />
+                    <p class="text-[#777] mx-24 lg:mx-20">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Minus, sapiente. Velit iure exercitationem dolores nesciunt dolore. Eum officiis dolorum hic
+                        voluptate quaerat minima, similique inventore esse, alias, sed quo officia? </p>
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="change1 flex flex-col justify-center items-center bg-[#f6f6f6] pb-11">
+            <h2 class="text-7xl sm:text-8xl font-extrabold text-[#ebeced] mt-16">Contact</h2>
+            <p class="change2 sm:text-xl -mt-5 sm:-mt-6 text-[#797979] mb-20">We are born to create</p>
+            <p class="change1 px-2 text-[25px] sm:text-[35px] font-extrabold text-[#2c4755] -tracking-[2px] mb-4">Feel
+                free to
+                drop us a line at:</p>
+            <a class="px-2 text-[#10cab7] text-[25px] sm:text-[35px] font-extrabold block"
+                href="mailto:alshabab.mo@gmail.com">alshabab.moh@gmail.com</a>
+            <div class="flex flex-row justify-center items-center mb-20">
+                <p> Find Us On Social Networks</p>
+                <a href="http://youtube.com"><i class="change1 fab fa-youtube text-[#2c4755] ml-2"></i></a>
+                <a href="http://facebook.com"><i class="change1 fab fa-facebook-f text-[#2c4755] ml-2"></i></a>
+                <a href="http://twitter.com"><i class="change1 fab fa-twitter text-[#2c4755] ml-2"></i></a>
+            </div>
+        </section>
+        <div class="relative">
+            <button id="myBtn" onclick="toTop()" class="z-10 fixed right-10 bottom-2 text-[rgb(30,41,85)] bg-slate-400 w-10 h-10 rounded-[10px]">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </main>
+    <footer class="change3 bg-[#2c4755] text-white text-center p-10 text-lg">
+        © 2021 <span class="font-bold text-[#10cab7]">Sheikh Alshabab</span> All Right Reserved
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
