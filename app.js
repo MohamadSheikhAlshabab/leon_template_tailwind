@@ -40,6 +40,7 @@ $(document).ready(() => {
   let $nav4 = $("#theme-toggle");
   let $nav5 = $(".change5");
   let $nav6 = $(".menu__box");
+  let $nav7 = $(".menu__item");
   let $logo = $("#my-logo");
   let $dark = $("#theme-toggle-dark-icon");
   let $light = $("#theme-toggle-light-icon");
@@ -59,8 +60,8 @@ $(document).ready(() => {
     $nav5.css("z-index","1");
     $nav4.css("background-color","rgb(225,225,225)");
     $dark.css("fill","rgb(225,225,225)");
-    $nav6.css("background-color","rgb(199,202,225)");
-    $nav6.css("color","rgb(30,41,85)");
+    $nav6.css("background-color","rgb(230,230,230)");
+    $nav7.css("color","rgb(99,102,241)");
     $menu.hover(()=>{ $(this).css("color","rgb(225,225,225)")})
   });
 
@@ -94,6 +95,11 @@ function toTop(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 
 }
+$(window).resize(function() {
+  if (screen.width >= 1024 ){
+    $('.menu__box').removeClass('show');
+  }
+});
 $(document).ready(function(){
   let counter = 0
   $('#menu__toggle').click(
